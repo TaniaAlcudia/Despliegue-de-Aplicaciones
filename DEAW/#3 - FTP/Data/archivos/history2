@@ -1,0 +1,109 @@
+    1  install build essentials
+    2  install build-essentials
+    3  apt-get install build-essentials
+    4  apt-get update
+    5  apt-get install build-essentials
+    6  apt-get install build-essential
+    7  apt-get install linux-headers-$(uname -r)
+    8  apt-get install dkms
+    9  apt-get install module-assistant
+   10  apt-get install xserver-xorg xserver-xorg-core
+   11  m-a prepare
+   12  apt-get install build-essential
+   13  apt-get install linux-headers-$(uname -r) dkms
+   14  apt-get install module-assistant
+   15  apt-get install xserver-xorg xserver-xorg-core
+   16  m-a prepare
+   17  cd /media/cdrom0
+   18  ls
+   19  sh ./VBoxLinuxAdditions.run
+   20  apt-get install vsftpd
+   21  user add
+   22  useradd
+   23  adduser
+   24  adduser sibila
+   25  adduser melisa
+   26  adduser aquiles
+   27  adduser trofonio
+   28  adduser agamenon
+   29  adduser ayax
+   30  gedit /etc/vsftpd.conf
+   31  nano /etc/vsftpd.conf
+   32  gedit /etc/vsftpd.conf
+   33  nano /etc/vsftpd.conf
+   34  ls /etc
+   35  apt-get install vsftpd
+   36  apt-get install vsftpd --fix-missing
+   37  apt-get install vsftpd
+   38  apt-get install xserver-xorg xserver-xorg-core
+   39  m-a prepare
+   40  cd /media/cdrom0
+   41  sh ./VBoxLinuxAdditions.run
+   42  reboot
+   43  apt-get install build-essential dkms linuxheaders-$(uname -r)
+   44  clear
+   45  gedit /etc/vsftpd.conf
+   46  apt-get install vsftpd
+   47  apt-get install vsftpd --fix-missing
+   48  ls /etc
+   49  gedit /etc/vsftpd.conf 
+   50  nano /etc/vsftpd.conf
+   51  gedit /etc/vsftpd.banner
+   52  nano /etc/vsftpd.banner
+   53  nano /etc/vsftpd.conf
+   54  nano /etc/.message
+   55  nano /etc/vsftpd.conf
+   56  mkdir /srv/ftp/public
+   57  chmod 777 /srv/ftp/public
+   58  ls -a /serv/ftp
+   59  ls -ah /serv/ftp
+   60  ls -ah /srv/ftp
+   61  ls -lah /srv/ftp
+   62  reboot
+   63  nano /etc/vsftpd.conf
+   64  systemctl restar vsftpd
+   65  systemctl restart vsftpd
+   66  systemctl status vsftpd
+   67  ftp ftp.atenera.olimpo.god
+   68  ftp ftp.atenea.olimpo.god
+   69  exit
+   70  history
+   71  ftp 
+   72  ftp ftp.atenea.olimpo.god
+   73  ftp dw2@ftp.atenea.olimpo.god
+   74  ftp oraculo.atenea.olimpo.god
+   75  reboot
+   76  nano /etc/ftpusers
+   77  nano /etc/vsftpd.conf
+   78  reboot
+   79  ls /home/trofonio
+   80  su trofonio
+   81  nano /etc/vsftpd.chroot_list.conf
+   82  nano /etc/vsftpd.chroot_list
+   83  nano /etc/vsftpd.conf
+   84  reboot
+   85  touch /home/aquiles/lalala
+   86  ls /home/aquiles/
+   87  nano /etc/vsftpd.conf
+   88  cd /srv/ftp/
+   89  ls
+   90  cd public
+   91  ls
+   92  cd ..
+   93  ls -l 
+   94  nano /etc/vsftpd.conf
+   95  reboot
+   96  chmod a-w /srv/ftp/public
+   97  ls -l /srv/ftp
+   98  chmod 777 /srv/ftp/public
+   99  chmod 777 /srv/ftp
+  100  nano /etc/vsftpd.conf
+  101  chmod a-w /srv/ftp/
+  102  reboot
+  103  nano /etc/vsftpd.conf
+  104  reboot
+  105  find /home -name ".message"
+  106  exit
+  107  cd /srv/ftp/
+  108  nano .message
+  109  history > /home/trofonio/history2

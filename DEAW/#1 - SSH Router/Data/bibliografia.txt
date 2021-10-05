@@ -1,0 +1,5 @@
+DOCUMNETACIÓN APORTADA EN MOODLE
+
+O'REILLY.com (29/09/2020)
+https://www.oreilly.com/library/view/linux-security-cookbook/0596003919/ch03s14.html
+https://www.arsys.es/blog/programacion/utilizar-comando-scp/

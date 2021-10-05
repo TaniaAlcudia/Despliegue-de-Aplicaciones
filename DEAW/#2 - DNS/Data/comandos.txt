@@ -1,0 +1,4 @@
+apt-get install bind9
+named-checkzone
+named-checkzone 10.130.6 /etc/bind/db.10.130.6
+named-checkzone atenea.olimpo.god /etc/bind/db.atenea.olimpo.god 

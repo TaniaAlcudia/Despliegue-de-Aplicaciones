@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Aplicación de Ejemplo</display-name>
+    <description>
+	Aplicación WEB de ejemplo
+    </description>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>mypackage.Hello</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <display-name>Acceso solo para profesores</display-name>
+        <web-resource-collection>
+        	<web-resource-name>Zona profesores</web-resource-name> 
+		<url-pattern>/privado/*</url-pattern>
+        </web-resource-collection>
+ 
+ 	<auth-constraint>
+  		<role-name>teacher</role-name>
+ 	</auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+ 	<display-name>Acceso para alumnos</display-name>
+ 	<web-resource-collection>
+  		<web-resource-name>Zona compartida</web-resource-name>
+  		<url-pattern>/publico/*</url-pattern>
+ 	</web-resource-collection>
+
+ 	<auth-constraint>
+  		<role-name>student</role-name>
+ 	</auth-constraint>
+    </security-constraint>
+
+    <login-config>
+ 	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/login.jsp</form-login-page>
+		<form-login-page>/error.jsp</form-login-page>
+	</form-login-config>
+    </login-config>
+</web-app>

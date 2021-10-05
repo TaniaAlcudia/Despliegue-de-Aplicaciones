@@ -1,0 +1,221 @@
+  113  apt-get install apache2
+  115  cd /etc/apache2/sites-available
+  116  nano servidor.local.conf
+  117  cd ..
+  118  nano ports.conf
+  119  ls
+  120  nano ports.conf
+  121  cd sites-
+  122  cd sites-available/
+  123  nano servidor1.local.conf
+  124  nano servidor.local.conf
+  125  rv servidor1.local.conf
+  126  rm servidor1.local.conf
+  127  ls
+  128  nano subastas.local.conf
+  129  nano subastas.local.conf
+  130  nano subastas.local.conf
+  131  a2ensite www.atenea.olimpo.god
+  132  ls
+  133  nano subastas.local.conf
+  134  a2ensite subastas.atenea.olimpo.god
+  135  a2ensite subastas.local.conf
+  136  a2ensite servidor.local.conf
+  137  nano servidor.local.conf
+  138  cd ..
+  139  ls
+  140  cd /var
+  141  ls
+  142  cd www
+  143  ls
+  144  mkdir subastas.local
+  145  mkdir servidor.local
+  146  ls
+  147  ifconfig
+  148  ipconfig
+  149  apt-get install ifconfig
+  150  apt-get install ipconfig
+  151  cp -r /home/trofonio/www/* /var/www/servidor.local/
+  152  cd /var/www/servidor.local/
+  153  ls
+  154  nano servidor.local.conf
+  155  cd /etc/apache2/sites-available
+  156  ls
+  157  nano servidor.local.conf
+  158  apache
+  159  apache2 -v
+  160  nano servidor.local.conf
+  161  cd /var/www/servidor.local/
+  162  cd gestion
+  163  nano .htaccess
+  164  nano .password
+  165  md5pass "olimpo"
+  166  apt-get install md5pass
+  167  apt-get install md5
+  168  apt-get install syslinux-utils
+  169  md5pass "olimpo"
+  170  md5pass "olimpo"
+  171  apt-get install wdMD5
+  172  nano .password
+  173  nano .password
+  174  cd /etc/apache2/sites-available
+  175  nano servidor.local.conf
+  176  systemctl restart apache2
+  177  nano servidor.local.conf
+  178  ls
+  179  fg
+  180  nano servidor.local.conf
+  181  cd /etc/apache2/sites-available
+  182  ls
+  183  nano servidor.local.conf
+  184  apt-get install php7.0
+  185  wget https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+  186  dpkg -i mysql-apt-config_0.8.10-1_all.deb
+  187  wget https://dev.mysql.com/get/mysql-apt-config_0.8.13-1_all.deb
+  188  dpkg -i mysql-apt-config_0.8.13-1_all.deb
+  189  apt update
+  190  apt install mysql-server
+  191  mysql start
+  192  sudo mysql start
+  193  service mysql start
+  194  service mysql status
+  195  apt-get install phpmyadmin
+  196  shutdown
+  197  cd /etc/apache2/sites-available
+  198  nano servidor.local.conf
+  199  nano servidor.local.conf
+  200  nano servidor.local.conf
+  201  su -
+  202  cd /etc/apache2/sites-available
+  203  nano servidor.local.conf
+  204  systemctl restart apache
+  205  systemctl restart apache2
+  206  nano servidor.local.conf
+  207  systemctl restart apache2
+  208  nano servidor.local.conf
+  209  systemctl restart apache2
+  210  cd /home
+  211  ls
+  212  wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.tar.xz
+  213  cd /var/www
+  214  ls
+  215  cd /home
+  216  sudo tar xf phpMyAdmin-5.0.4-all-languages.tar.xz -C /var/www/subastas.local/
+  217  mv /var/www/subastas.local/phpMyAdmin-5.0.4-all-languages/ /var/www/subastas.local/phpmyadmin
+  218  chown www-data /var/www/subastas.conf/phpmyadmin/
+  219  chown www-data /var/www/subastas.local/phpmyadmin/
+  220  mysql -u root -p
+  221  cd /var/www/subastas.local/phpmyadmin/sql/
+  222  ls
+  223  cat create_tables.sql | mysql -u pma -p
+  224  cat create_tables.sql | mysql -u root -p
+  225  mysql -u root -p
+  226  cat create_tables.sql | mysql -u dw2 -p
+  227  cd /etc/apache2/mods-enabled
+  228  ls
+  229  a2enmod ssl
+  230  systemctl restart apache2
+  231  apt-get install openssl
+  232  make-ssl-cert
+  233  cd /etc/apache2
+  234  mkdir -p certificados
+  235  make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/certificados/subastas.local.pem openssl req $@ -new -x509 -days 365 -nodes -out
+  236  cd /etc/apache2/sites-available
+  237  ls
+  238  nano subastas.conf
+  239  nano subastas.local.conf
+  240  chmod 600 /etc/apache2/certificados/subastas.local.pem
+  241  cd /etc/apache2/certificados
+  242  ls
+  243  ls -la
+  244  make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/certificados/subastas.local.pem openssl req $@ -new -x509 -days 365 -nodes -out
+  245  make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/certificados/subastas.local.pem openssl req $@ -new -x509 -days 365 -nodes -out
+  246  make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/certificados/subastas.local.pem openssl req $@ -new -x509 -days 365 -nodes -out
+  247  cd /etc/apache2/certificados
+  248  ls
+  249  chmod 600 /etc/apache2/certificados/subastas.local.pem
+  250  aenmod ssl
+  251  a2enmod ssl
+  252  service apache2 restart
+  253  nano /etc/apache2/ports.conf
+  254  cd /etc/apache2/sites-available
+  255  nano subastas.local.conf
+  256  service apache2 restart
+  257  service php start
+  258  a2enmod php7
+  259  a2enmod php5
+  260  apt-get install libapache2-mod-php7.0
+  261  apt -y install php-bz2 php-mbstring php-zip
+  262  systemctl reload apache2
+  263  service restart apache2
+  264  service apache2 restart
+  265  apt-get install libapache2-mod-php7.0
+  266  apt-get install php
+  267  apt -y install php-fpm
+  268  nano default
+  269  ls
+  270  nano default-ssl.conf
+  271  nano 000-default.conf 
+  272  ls -la
+  273  systemctl restart nginx
+  274  apt-get install libapache2-mod-php
+  275  apt-get install php-mysql
+  276  cat create_tables.sql | mysql -u dw2@localhost -p
+  277  mysql_secure_installation
+  278  mysql -u root -p
+  279  mysql -u root -p''
+  280  mysql -u root
+  281  mysql -u root -p
+  282  mysql -u dw2 -p
+  283  service mysql stop
+  284  mysql_safe --skip-grant-tables &
+  285  mysqld_safe --skip-grant-tables &
+  286  mysql
+  287  cat /etc/passwd
+  288  mysql -u root -p
+  289  cd /var/www/
+  290  ls
+  291  cd subastas.local
+  292  ls
+  293  cd /home/dw2
+  294  ls
+  295  cd subastas/
+  296  ls
+  297  cd 07-Subastas/
+  298  cp * /var/www/subastas.local/
+  299  cp -r * /var/www/subastas.local/
+  300  cp * /var/www/subastas.local/
+  301  cp -r * /var/www/subastas.local/
+  302  cd /var/www/subastas.local
+  303  ls
+  304  nano config.php
+  305  a2enmod userdir
+  306  mkdir /home/sibila/public_html
+  307  mkdir /home/melisa/public_html
+  308  mkdir /home/aquiles/public_html
+  309  cd /home
+  310  ls
+  311  cd sibila
+  312  ls
+  313  cd public_html
+  314  ls
+  315  cd /var/www
+  316  ls
+  317  cd servidor.local
+  318  ls
+  319  cp -r info /home/sibila/public_html
+  320  cd BIBLIOTECA/
+  321  ls
+  322  cp -r leyendas /home/sibila/public_html
+  323  cd ..
+  324  ls
+  325  cp -r info /home/melisa/public_html
+  326  cp -r info /home/aquiles/public_html
+  327  cd BIBLIOTECA/
+  328  ls
+  329  cp -r leyendas /home/melisa/public_html
+  330  cp -r leyendas /home/aquiles/public_html
+  331  a2enmod userdir
+  332  nano /etc/apache2/mods-available/userdir.conf
+  333  history
+  334  history > /home/historyapache

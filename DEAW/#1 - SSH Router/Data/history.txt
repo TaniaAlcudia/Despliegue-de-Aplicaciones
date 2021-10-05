@@ -1,0 +1,83 @@
+    1  apt-get install build-essential module-assistant
+    2  m-a prepare
+    3  cp /media/cdrom0/VBoxLinuxAdditions.run /tmp
+    4  cp /media/cdrom0/VBoxLinuxAdditions.run /tmp
+    5  cd /tmp
+    6  chmod 755 VBoxLinuxAdditions.run
+    7  ./VBoxLinuxAdditions.run
+    8  reboot
+    9  apt-get install iputils-ping
+   10  apt-get install net-tools
+   11  apt-get install inetutils-tools inetutils-ping
+   12  apt-get remove --purge resolvconf
+   13  systemctl status systemd-resolve.service
+   14  apt-get install resolvconf
+   15  gedit /etc/resolv.conf
+   16  gedit /etc/interfaces
+   17  gedit /etc/network/interfaces
+   18  gedit /etc/network/interfaces
+   19  systemctl stop NetworkManager
+   20  systemctl disable NetworkManager
+   21  gedit /etc/resolv.conf
+   22  systemctl restart network
+   23  systemctl restart networking
+   24  ping www.google.es
+   25  ifconfig
+   26  ping 8.8.8.8
+   27  ping www.google.es
+   28  gedit /etc/resolv.conf
+   29  gedit /etc/network/interfaces
+   30  systemctl restart networking
+   31  ping www.google.es
+   32  gedit /etc/resolv.conf
+   33  nslookup www.google.es 8.8.8.8
+   34  ping www.google.es
+   35  mv /home/debian/fw.sh /etc/init.d/
+   36  chmod +x /etc/init.d/fw.sh
+   37  update-rc.d fw.sh defaults
+   38  route
+   39  route add default gw 172.20.130.1
+   40  route
+   41  systemctl restart networking
+   42  route
+   43  reboot
+   44  ifconfig
+   45  ls -l
+   46  ls /etc
+   47  ls / -R
+   48  ls / -R
+   49  touch /home/debian/desktop/lol.txt
+   50  touch /home/debian/lol.txt
+   51  ls / -R
+   52  touch /home/debian/lol2.txt
+   53  touch /home/debian/lol3.txt
+   54  touch /home/debian/lol4.txt
+   55  touch /home/debian/lol5.txt
+   56  for($i=0;$i<10;$i++) touch/home/debian/wtf$i,txt
+   57  touch /home/debian/lol6.txt
+   58  touch /home/debian/lol7.txt
+   59  ls -l /home/debian/
+   60  route
+   61  apt-get install ssh
+   62  route
+   63  ifdown -a
+   64  ifup -a
+   65  route add -net 10.130.10.0 netmask 255.255.255.0 gw 172.20.13.140
+   66  route add -net 10.130.10.0 netmask 255.255.255.0 gw 172.20.130.140
+   67  route
+   68  ifdown -a
+   69  ifup -a
+   70  route
+   71  route add -net 10.130.10.0 netmask 255.255.255.0 gw 172.20.130.140
+   72  sudo gedit /etc/network/interfaces
+   73  reboot
+   74  gedit /etc/ssh/sshd_config
+   75  gedit /etc/ssh/sshd_config
+   76  systemctl restart ssh
+   77  adduser 
+   78  useradd
+   79  adduser dw2
+   80  gedit /etc/ssh/sshd_config
+   81  systemctl restart ssh
+   82  history
+   83  history > history.txt

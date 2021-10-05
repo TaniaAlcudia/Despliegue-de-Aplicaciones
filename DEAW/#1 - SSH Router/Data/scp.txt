@@ -1,0 +1,1 @@
+scp -P 222 dw2@172.20.130.136:/etc/ssh/sshd_config "C:\Users\dw2"
